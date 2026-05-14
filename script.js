@@ -2,13 +2,13 @@
 lucide.createIcons();
 
 // --- Navbar Scroll Effect ---
-const navbar = document.getElementById('navbar');
+const navbarWrapper = document.querySelector('.navbar-wrapper');
 
 window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
+        navbarWrapper.classList.add('scrolled');
     } else {
-        navbar.classList.remove('scrolled');
+        navbarWrapper.classList.remove('scrolled');
     }
 });
 
